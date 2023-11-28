@@ -27,6 +27,14 @@ router.put("/updatesalesman/:sid", salesmenApi.updateById);
 router.delete("/salesman/byid/:sid", salesApi.deleteSalesManById);
 
 
+const evalrecordApi= require("../apis/Evalrecord-api");
+router.post("/addrecord", evalrecordApi.addEvalrecord);
+router.get("/recors", evalrecordApi.getAllRecords);
+router.get("/record/:year", evalrecordApi.getRecordByYear);
+
+
+
+
 
 
 
